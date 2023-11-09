@@ -2,12 +2,11 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Bookkeeping bookkeeping = new Bookkeeping();
 
         FamilyDoctor fd = new FamilyDoctor("Adam", "Rodzinny", 100);
-        bookkeeping.printTransferOrder(fd);
+        fd.printTransferOrder();
 
         SpecialistDoctor sd = new SpecialistDoctor("Adam", "Specjalista", 100);
-        bookkeeping.printTransferOrder(sd);
+        sd.printTransferOrder();
     }
 }

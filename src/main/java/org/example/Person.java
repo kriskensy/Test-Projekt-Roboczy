@@ -1,8 +1,5 @@
 package org.example;
-//jezeli osoba implementuje IObjectWIthContract to zeby nie byla abstrakcyjna musi miec zrealizowane wszystkie
-// metody z interfejsu czyli print() oraz paycheck()
-//Person nie ma funkcji paycheck() dlatego w dalszym ciagu jest abstrakcyjna (musi miec abstract)
-public abstract class Person implements IObjectWithContract {
+public abstract class Person {
     private String name;
     private String surname;
 
@@ -13,5 +10,15 @@ public abstract class Person implements IObjectWithContract {
 
     public void print() {
         System.out.println(name + " " + surname);
+    }
+
+    public abstract double paycheck();
+
+    public void printTransferOrder() {
+        System.out.println("Transfer order");
+        System.out.println("Name and surname: ");
+        print();
+        System.out.println("Transfer amount: " + paycheck());
+        System.out.println();
     }
 }
