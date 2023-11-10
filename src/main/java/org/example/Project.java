@@ -1,7 +1,7 @@
 package org.example;
 
 //jezeli klasa zawiera conajmniej metode abstrakcyjna to musi byc abstrakcyjna
-public abstract class Project implements IObjectToAgreement {
+public abstract class Project {
     private String title;
     private String description;
     protected double additionalCosts;
@@ -19,6 +19,12 @@ public abstract class Project implements IObjectToAgreement {
         System.out.println("Additionals costs: " + this.additionalCosts);
     }
 
-    public abstract double quotation(); //funkcja abstrakcyjna to taka ktora ma asbtract z przodu i nie ma bloku.
-    // Jak nie wiemy jak napisac dana funkcje w klasie w ktorej jestesmy a wiemy jak w klasie dziedziczacej to warto zrobic ja abstrakcyjna.
+    public abstract double quotation();
+
+    public void printAgreement() {
+        System.out.println();
+        System.out.println("===Agreement===");
+        data();
+        System.out.println("Amount: " + quotation());
+    }
 }
