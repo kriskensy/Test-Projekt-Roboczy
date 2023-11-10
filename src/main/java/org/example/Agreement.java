@@ -2,10 +2,10 @@ package org.example;
 
 public class Agreement {
 
-    public void printAgreement(Project project) {
+    public void printAgreement(IObjectToAgreement iObjectToAgreement) {
         System.out.println();
         System.out.println("===Agreement===");
-        project.projectData();
-        System.out.println("Amount: " + project.quotation());
+        iObjectToAgreement.data();
+        System.out.println("Amount: " + iObjectToAgreement.quotation());
     }
 }

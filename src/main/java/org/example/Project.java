@@ -1,17 +1,18 @@
 package org.example;
+
 //jezeli klasa zawiera conajmniej metode abstrakcyjna to musi byc abstrakcyjna
-public abstract class Project {
+public abstract class Project implements IObjectToAgreement {
     private String title;
     private String description;
     protected double additionalCosts;
 
-    public Project (String title, String description, double additionalCosts) {
+    public Project(String title, String description, double additionalCosts) {
         this.title = title;
         this.description = description;
         this.additionalCosts = additionalCosts;
     }
 
-    public void projectData() {
+    public void data() {
         System.out.println("Project data:");
         System.out.println("Title: " + this.title);
         System.out.println("Description: " + this.description);

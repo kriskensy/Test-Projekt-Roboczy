@@ -18,8 +18,8 @@ public class ProgrammingProject extends Project {
         this.testerNumberOfPersonMonth = testerNumberOfPersonMonth;
     }
 
-    public void projectData() {
-        super.projectData();
+    public void data() {
+        super.data();
         System.out.println("Junior programmer number of person-month: " + this.juniorProgrammerNumberOfPersonMonth);
         System.out.println("Programmer number of person-month: " + this.programmerNumberOfPersonMonth);
         System.out.println("Senior programmer number of person-month: " + this.seniorProgrammerNumberOfPersonMonth);

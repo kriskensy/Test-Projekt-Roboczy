@@ -12,8 +12,8 @@ public class HelpdeskProgrammingProject extends ProgrammingProject {
         this.helpdeskNumberOfHours = helpdeskNumberOfHours;
     }
 
-    public void projectData() {
-        super.projectData();
+    public void data() {
+        super.data();
         System.out.println("Helpdesk number of hours: " + this.helpdeskNumberOfHours);
     }
 

@@ -11,8 +11,8 @@ public class AuditProject extends Project {
         this.seniorSpecialistNumberOfPersonMonth = seniorSpecialistNumberOfPersonMonth;
     }
 
-    public void projectData() {
-        super.projectData();
+    public void data() {
+        super.data();
         System.out.println("Specialist number of person-month: " + this.specialistNumberOfPersonMonth);
         System.out.println("Senior specialist number of person-month: " + this.seniorSpecialistNumberOfPersonMonth);
     }
